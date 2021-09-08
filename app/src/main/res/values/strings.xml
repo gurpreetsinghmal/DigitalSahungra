@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Digital Sahungra</string>
+
+    <string name="tagline">India\'s first online Gram Panchayat</string>
+    <string name="website">www.digitalsahungra.in</string>
+    <string name="goodbye">Are you sure that you really want to exit from Digital Sahungra app</string>
+    <string name="update">Please update Digital Sahungra App for latest features</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--  <string name="short_app_name">DS</string>
+    <string name="map_key" translatable="false">AIzaSyAUUoBl9DDFj_ayTIXDWwhl-TI4qMDYEO4</string> -->
+</resources>

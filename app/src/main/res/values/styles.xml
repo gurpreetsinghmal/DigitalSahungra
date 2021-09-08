@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightblack</item>
+        <item name="colorPrimaryDark">@color/lightblack</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@color/color2</item>
+        <item name="colorControlNormal">@color/lightblack</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/lightblack</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+    <style name="TabLayoutStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="colorAccent">@color/color2</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+
+    </style>
+
+    <style name="expanded_subtitle_text_appearence" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+    <style name="collappsed_subtitle_text_appearence" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/color2</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="bottom_bar_text" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/color2</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+
+        <!--   <item name="android:windowDisablePreview">true</item>
+           <item name="android:windowTranslucentStatus">true</item>
+           <item name="android:windowTranslucentNavigation">true</item>
+           <item name="android:fitsSystemWindows">false</item>
+           <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+           <item name="android:statusBarColor">@color/colorPrimaryDark</item> -->
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+</resources>

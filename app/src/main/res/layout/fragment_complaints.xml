@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+       <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:weightSum="10">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="0dp"
+            android:layout_weight="7.0"
+            android:layout_height="wrap_content"
+            app:title="Complaints"
+            android:id="@+id/complaints_toolbar"
+            app:titleTextAppearance="@style/collappsed_subtitle_text_appearence"></androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:scaleType="centerInside"
+        android:id="@+id/attachment"
+        android:src="@drawable/ic_attachment_black_24dp"
+        android:tint="@color/grey"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:scaleType="centerInside"
+        android:id="@+id/sendcomplaint"
+        android:src="@drawable/ic_send_black_24dp"
+        android:tint="@color/color2"
+        ></ImageView>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_background">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:id="@+id/etname"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="14sp"
+                android:textColorHint="@color/grey"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_background">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/ettitle"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="14sp"
+                android:textColorHint="@color/grey"></EditText>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/etmsg"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="@color/grey"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:hint="Compose Suggession"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:gravity="top|left"
+            android:lines="20"
+            android:textSize="14dp"
+            android:minLines="12"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Suggestion"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@drawable/buttonlogin"
+            android:id="@+id/submit"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/attachment_container"
+    android:visibility="gone"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attachment"
+        android:textColor="@color/color2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+    </TextView>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:id="@+id/attachment_rv"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+    </LinearLayout>
+
+
+
+    </ScrollView>
+    <include layout="@layout/progressbar"></include>
+</RelativeLayout>

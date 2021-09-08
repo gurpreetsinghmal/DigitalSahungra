@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            ></item>
+
+        <item
+            android:title="Updates"
+            android:id="@+id/updates"
+            android:icon="@drawable/ic_notifications_active_black_24dp"
+            ></item>
+        <item
+            android:title="Blogs"
+            android:id="@+id/blogs"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            ></item>
+
+        <item
+            android:title="News"
+            android:id="@+id/news"
+            android:icon="@drawable/ic_news"
+            ></item>
+
+
+
+    </group>
+</menu>

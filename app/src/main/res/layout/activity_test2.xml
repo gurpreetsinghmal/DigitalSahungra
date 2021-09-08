@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mycontainer"
+                android:layout_above="@+id/botton_nav_bar"></FrameLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/botton_nav_bar"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_overlay"
+                app:elevation="10dp"
+                app:itemTextAppearanceActive="@style/bottom_bar_text"
+                app:menu="@menu/bottombar_menu"
+                app:itemIconTint="@color/bottombar_item_color"
+                app:itemTextColor="@color/bottombar_item_color"
+                android:layout_gravity="bottom"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

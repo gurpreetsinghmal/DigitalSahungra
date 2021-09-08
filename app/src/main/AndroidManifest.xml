@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.sahungra.digitalsahungra">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".blog_composer"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".donation"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".saved_posts"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".official_cabin"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".profile_editor"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".zoom_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".panchayt_member_profile_editor"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".panchayt_members"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".stars"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".Assets"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".Emergency_calls"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".updates_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".Verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".Introslides"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".ComplaintActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="Map"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity android:name=".Detailpostactivity" />
+        <activity
+            android:name=".Splashactivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".Auth_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReachLocation"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+ Set color used with incoming notification messages.
+        This is used when no color is set for the incoming notification message. See README
+        (https://github.com/firebase/quickstart-android/tree/master/messaging#custom-default-color) for more.
+        -->
+        <service
+            android:name=".Mymessagingservice"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/roundlogo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.anabled"
+            android:value="true" />
+    </application>
+
+</manifest>

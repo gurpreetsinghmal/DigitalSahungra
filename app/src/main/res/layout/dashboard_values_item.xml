@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    >
+    <ProgressBar
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:id="@+id/progless"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/prog_grad"></ProgressBar>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/postimage"
+            app:riv_corner_radius="20dp"
+            ></com.makeramen.roundedimageview.RoundedImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/description_plate"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View more,earn more give more"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/post_title"
+                android:singleLine="true"
+                android:fontFamily="@font/open_sans"
+                android:textSize="18sp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:id="@+id/post_description"
+                android:layout_marginTop="5dp"
+                android:text="Everyday Gram Panchayt Sahungra took lot of Actions To make the Village Digital. See Whats being going on below."></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read More"
+                android:textStyle="bold"
+                android:id="@+id/read_more"
+                android:textColor="@color/color2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"></TextView>
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

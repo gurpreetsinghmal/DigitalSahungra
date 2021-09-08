@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@color/white"
+                app:titleTextAppearance="@style/collappsed_subtitle_text_appearence"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            </androidx.appcompat.widget.Toolbar>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/blog_time_line"
+                    android:background="@color/black"
+                    android:layout_marginBottom="50dp"
+                    ></androidx.recyclerview.widget.RecyclerView>
+                <include layout="@layout/empty_blog"></include>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="horizontal">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/heading"
+                        android:background="@drawable/console_plate"
+                        android:layout_marginLeft="2dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Heading"
+                            android:drawableTint="@color/blue"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:drawableLeft="@drawable/ic_title_black_24dp"
+                            android:textColor="@color/blue"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subtitle"
+                        android:background="@drawable/console_plate"
+                        android:layout_marginLeft="2dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subtitle"
+                            android:drawableTint="@color/blue"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+                            android:textColor="@color/blue"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/para"
+                        android:background="@drawable/console_plate"
+                        android:layout_marginLeft="2dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paragraph"
+                            android:drawableTint="@color/blue"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:drawableLeft="@drawable/ic_format_align_center_black_24dp"
+                            android:textColor="@color/blue"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/blogpic"
+                        android:background="@drawable/console_plate"
+                        android:layout_marginLeft="2dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Image"
+                            android:drawableTint="@color/blue"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:drawableLeft="@drawable/ic_image_black_24dp"
+                            android:textColor="@color/blue"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/console_plate"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/hyperlink"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hyperlinks"
+                            android:drawableTint="@color/blue"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:drawableLeft="@drawable/ic_code_black_24dp"
+                            android:textColor="@color/blue"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/topbar">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shed_mirror"
+                app:title="New Blog"
+                app:titleTextColor="@color/white"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="40sp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/buttonlogin"
+                        android:text="Discard"
+                    android:id="@+id/discard"
+                    android:textSize="10sp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/black_overlay"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:drawableTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    ></Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40sp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/buttonlogin"
+                    android:text="Publish"
+                    android:id="@+id/publish"
+                    android:textSize="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:drawableTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    ></Button>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <include layout="@layout/progressbar"></include>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

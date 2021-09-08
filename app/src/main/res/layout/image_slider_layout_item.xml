@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="270dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/imgone"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_auto_image_slider"></com.makeramen.roundedimageview.RoundedImageView>
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="270dp"
+          android:background="@drawable/text_mirror"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shed_mirror"></ImageView>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/iv_gif_container"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"></ImageView>
+
+</RelativeLayout>

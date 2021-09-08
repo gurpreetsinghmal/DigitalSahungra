@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_margin="12dp"
+        android:gravity="left"
+        android:id="@+id/blog_para"
+        android:text="Created for the Parliamentary Recruiting Committee, the poster depicts two women and a child looking out of an open window at a column of soldiers marching past, with the text . At the beginning of 1914, the British Army had a reported strength of 710,000 men, including reserves. By the end of hostilities, over five million men had joined up, 2.67 million as volunteers and 2.77 million as conscripts."></TextView>
+
+</LinearLayout>

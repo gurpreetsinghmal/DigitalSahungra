@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/menu_gp1"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@color/grey"
+            android:title="Home"></item>
+
+        <item
+            android:id="@+id/nav_office"
+            android:icon="@drawable/ic_computer_black_24dp"
+            android:title="Official Cabin"
+            android:iconTint="@color/grey"></item>
+
+
+
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_member"
+            android:iconTint="@color/grey"
+            android:title="Panchayat Members"></item>
+        <item
+            android:id="@+id/star"
+            android:iconTint="@color/grey"
+            android:icon="@drawable/ic_stars_black_24dp"
+            android:title="Stars Of Sahungra"></item>
+
+        <item
+            android:id="@+id/nav_hospital"
+            android:icon="@drawable/ic_hospital"
+            android:title="Nearby Hospitals"
+            android:iconTint="@color/grey"></item>
+        <item
+            android:id="@+id/nav_assets"
+            android:icon="@drawable/ic_assets"
+            android:title="Village Assets"
+            android:iconTint="@color/grey"></item>
+
+
+        <item
+            android:id="@+id/nav_vip"
+            android:icon="@drawable/ic_vip_emergency"
+            android:title="Emergency Call Logs"
+            android:iconTint="@color/grey"></item>
+        <item
+            android:title="Donate"
+            android:id="@+id/donate"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            ></item>
+        <item
+            android:id="@+id/saved_posts"
+            android:icon="@drawable/ic_bookmark_border_black_24dp"
+            android:title="Saved Posts"
+            android:iconTint="@color/grey"></item>
+
+    </group>
+
+</menu>
