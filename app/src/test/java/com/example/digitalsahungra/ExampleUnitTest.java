@@ -1,4 +1,4 @@
-package com.sahungra.digitalsahungra;
+package com.technominds.digitalsahungrav2;
 
 import org.junit.Test;
 

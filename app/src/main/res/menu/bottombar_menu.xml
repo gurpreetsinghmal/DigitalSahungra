@@ -12,11 +12,11 @@
             android:id="@+id/updates"
             android:icon="@drawable/ic_notifications_active_black_24dp"
             ></item>
-        <item
-            android:title="Blogs"
-            android:id="@+id/blogs"
-            android:icon="@drawable/ic_question_answer_black_24dp"
-            ></item>
+<!--        <item-->
+<!--            android:title="Blogs"-->
+<!--            android:id="@+id/blogs"-->
+<!--            android:icon="@drawable/ic_question_answer_black_24dp"-->
+<!--            ></item>-->
 
         <item
             android:title="News"

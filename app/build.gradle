@@ -15,22 +15,21 @@ android {
             keyPassword 'sahungra'
         }
     }
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.sahungra.digitalsahungra"
+        applicationId "com.technominds.digitalsahungrav2"
         minSdkVersion 22
-        targetSdkVersion 29
-
-        versionName '1.0.7'
-
+        targetSdkVersion 30
+        versionName '1.0.7.5'
         signingConfig signingConfigs.release
         multiDexEnabled = true
-        versionCode = 1062
+        versionCode = 1075
         //testInstrumentationRunner "androidx.Test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
+            debuggable true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
